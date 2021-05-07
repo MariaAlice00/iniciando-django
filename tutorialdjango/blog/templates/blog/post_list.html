@@ -1,0 +1,19 @@
+{% extends "blog/base.html" %} <!-- herdar tudo que está no arquivo base.html -->
+
+{% block title %}Meu Blog {% endblock %}
+
+{% block content %} <!-- o que vai ocupar o main em base.html -->
+    {% for post in post_list %}   
+        <article>
+            <h2>
+                <a href="{{ post.get_absolute_url }}">
+                    {{ post.title }}
+                </a>
+            </h2>
+            <p class="date">
+                Publicado em {{ post.created }} por {{ post.author }}
+            </p>
+            {{ post.body|linebreaks|truncatewords:10 }} <!--dez primeiras palavras do post-->
+        </article>
+    {% endfor %}
+{% endblock %}
