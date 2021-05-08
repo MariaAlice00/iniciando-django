@@ -4,7 +4,8 @@ Primeiros projetos com Django. Somente pequenos projetos.
 
 <ul>
     <li>djangoAdmin</li>
-    Aplicação web completa com Django Admin 
+    Aplicação web completa com Django Admin;
+    Curso da DevMedia;
     <li>tutorialdjango</li>
-    Pequena aplicação baseado em um vídeo do YouTube
+    Pequena aplicação baseado em um vídeo do YouTube;
 </ul>
