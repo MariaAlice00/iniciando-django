@@ -1,0 +1,10 @@
+{% extends 'app/base.html' %}
+
+{% block title %} {{ produto.nome }} {% endblock %}
+
+{% block content %}
+    <h2>{{ produto.nome }}</h2>
+    <img src="{{ produto.imagem.url }}" style="width: 10%;">
+    <p>Valor: R$ {{ produto.valor }} </p>
+    <p>Descrição : {{ produto.descricao }} </p>
+{% endblock %}

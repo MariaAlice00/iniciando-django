@@ -1,0 +1,15 @@
+{% extends 'app/base.html' %}
+
+{% block title %} Lista de Produtos {% endblock %}
+
+{% block content %}
+    {% for produto in produto_list %}
+    <article>
+        <a href="{{ produto.get_absolute_url }}">
+            <h2>{{ produto.nome }} - R$ {{ produto.valor }}</h2>
+            <img src="{{ produto.imagem.url }}" style="width: 10%;">
+        </a>
+    </article>
+    {% endfor %}
+
+{% endblock %}
