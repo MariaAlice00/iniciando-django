@@ -1,6 +1,6 @@
 <h1>Iniciando Django</h1>
 
-Primeiros projetos com Django. Somente pequenos projetos.
+Primeiros projetos feitos durante o estudo com Django. Somente pequenos projetos.
 
 <ul>
     <li>djangoAdmin</li>
